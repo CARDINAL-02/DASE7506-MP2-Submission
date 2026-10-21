@@ -1,0 +1,36 @@
+PCA 32 fit 1.7s
+  logit 0.003 nit 68 loss 0.2070 2.4s
+  PCA32 lam=0.003 hard 84.23 all 92.98
+  logit 0.01 nit 37 loss 0.2209 1.3s
+  PCA32 lam=0.01 hard 83.38 all 92.61
+  logit 0.03 nit 27 loss 0.2394 0.9s
+  PCA32 lam=0.03 hard 82.25 all 92.11
+  logit 0.1 nit 18 loss 0.2651 0.8s
+  PCA32 lam=0.1 hard 80.28 all 91.23
+PCA 64 fit 2.0s
+  logit 0.003 nit 62 loss 0.1995 2.5s
+  PCA64 lam=0.003 hard 82.82 all 92.36
+  logit 0.01 nit 39 loss 0.2146 1.7s
+  PCA64 lam=0.01 hard 84.23 all 92.98
+  logit 0.03 nit 26 loss 0.2344 1.0s
+  PCA64 lam=0.03 hard 82.54 all 92.23
+  logit 0.1 nit 17 loss 0.2619 0.8s
+  PCA64 lam=0.1 hard 81.41 all 91.73
+PCA 128 fit 2.7s
+  logit 0.003 nit 69 loss 0.1916 3.2s
+  PCA128 lam=0.003 hard 84.79 all 93.23
+  logit 0.01 nit 41 loss 0.2085 2.2s
+  PCA128 lam=0.01 hard 84.23 all 92.98
+  logit 0.03 nit 26 loss 0.2296 1.3s
+  PCA128 lam=0.03 hard 84.23 all 92.98
+  logit 0.1 nit 17 loss 0.2584 0.8s
+  PCA128 lam=0.1 hard 81.69 all 91.85
+PCA 256 fit 9.5s
+  logit 0.003 nit 64 loss 0.1742 4.4s
+  PCA256 lam=0.003 hard 83.66 all 92.73
+  logit 0.01 nit 39 loss 0.1950 2.9s
+  PCA256 lam=0.01 hard 84.23 all 92.98
+  logit 0.03 nit 25 loss 0.2190 1.7s
+  PCA256 lam=0.03 hard 84.79 all 93.23
+  logit 0.1 nit 16 loss 0.2505 1.0s
+  PCA256 lam=0.1 hard 82.25 all 92.11

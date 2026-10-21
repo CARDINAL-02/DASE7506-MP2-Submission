@@ -1,0 +1,153 @@
+{
+  "name": "v2-listwise-0.1",
+  "validation_correct": 743,
+  "validation_n": 798,
+  "validation_accuracy": 93.10776942355889,
+  "selection_source": "supplement/results.json",
+  "post_test_exposure": true,
+  "decision": "Keep v2 regardless of final test comparison; no test-based rollback.",
+  "thread_env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "assets": {
+    "runs\\model_bundle_v2\\config.json": {
+      "sha256": "b3fc8dc08342644c368bc7e53b7ef0811c134ef74f82d3a95292a5e54048d512",
+      "bytes": 55
+    },
+    "runs\\model_bundle_v2\\weights.npz": {
+      "sha256": "98d0cd91b5d26fedf78f91f48e15b091bc10bac771b39b6d8748a6b7bd563c9d",
+      "bytes": 50784
+    }
+  },
+  "sources": {
+    "analyze.py": "2ef09b4e422984dc6fdcecd995afe16f4d57f50eeec863977fb18859ab4cb54f",
+    "baseline_first.py": "2a357a904cf21941ad91bcd3b057fd5890dc58ddcbb500af09e71f8797264c41",
+    "check_data.py": "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "features.py": "beadf6847cedd867ba65ae5d684111cc28cd0d728e99ff6cdaad9c88c6499a5b",
+    "finalize.py": "3315ace2250940632a93198d8ae6f0bc15cc27ad3bd4ea2c9d8c6bf298e868b3",
+    "finalize_v2.py": "24998928c3c226910d7c7e5054dd88e1af1ed43ba23cad91d03f6cb0daf5e4e5",
+    "hardware_probe.py": "439e303b3b0cf117cff94d8644f19dc0539193482019e9efd1fbc96dbe170db9",
+    "make_report.py": "61dee557717075a92ad91471b5b26973d687551be6733bb068997a38fe478967",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "report_revision.py": "7c140a7ebdd1833d417cfff9ad9352c48b297d6a9dae7d045446a5f9aae2a9c3",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "submission.py": "964c44e1ef27d5e9c0e42fe340a0ca7a631c501dc50ed1cd0d7f7d14f97f262c",
+    "supplement.py": "8fb4766998fb92626161fcc7204e094bdd4227ba7699ee91231473305879fb57",
+    "supplement_analysis.py": "2e13a2b457a1399cacd99173c2e52f57d86cabbfb10fb8741e1df966c1119a69",
+    "supplement_features.py": "1432d64a8e09dacca497daf73aa38f344c1fb8dc152d09cea1fa92eff133464d",
+    "supplement_method.py": "c893dea7ea7f10420fe6951381329b4c81166bdcc071bc49759770b53ef40ec1",
+    "test_selection.py": "43904020faccaa73ce746c042c8c8355b158a0cda60af22054e1061ff0cddeec",
+    "test_supplement.py": "162546557580d1740503b110c92ff7f1b9fda03ba3dacc2aaa754d6df6ec1de1",
+    "train.py": "e4a5260b0ec50d90be01be0539f83d68c65c45be05ce45b653676dff2a147a37"
+  },
+  "timestamp_utc": "2026-10-21T10:50:04Z",
+  "asset_bytes": 50839,
+  "validation_total_seconds": 1.5670500000014727,
+  "validation_processes": [
+    {
+      "command": [
+        "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+        "predict.py",
+        "--method",
+        "submission.py",
+        "--checkpoint",
+        "runs\\model_bundle_v2",
+        "--split",
+        "validation",
+        "--output",
+        "runs\\validation-v2-predictions.json"
+      ],
+      "peak_sampled_os_threads": 3,
+      "samples": 90,
+      "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"validation\", \"prediction_seconds\": 0.7064568000005238}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+        "score_predictions.py",
+        "--split",
+        "validation",
+        "--predictions",
+        "runs\\validation-v2-predictions.json",
+        "--output",
+        "runs\\validation-v2-score.json"
+      ],
+      "peak_sampled_os_threads": 3,
+      "samples": 37,
+      "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"validation\",\n  \"correct\": 743,\n  \"n\": 798,\n  \"accuracy\": 93.10776942355889,\n  \"scoring_seconds\": 0.0797327000000223\n}\n",
+      "stderr": ""
+    }
+  ],
+  "test_total_seconds": 1.237579900000128,
+  "test_processes": [
+    {
+      "command": [
+        "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+        "predict.py",
+        "--method",
+        "submission.py",
+        "--checkpoint",
+        "runs\\model_bundle_v2",
+        "--split",
+        "test",
+        "--output",
+        "runs\\test-v2-predictions.json"
+      ],
+      "peak_sampled_os_threads": 3,
+      "samples": 66,
+      "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"test\", \"prediction_seconds\": 0.43049080000128015}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+        "score_predictions.py",
+        "--split",
+        "test",
+        "--predictions",
+        "runs\\test-v2-predictions.json",
+        "--output",
+        "runs\\test-v2-score.json"
+      ],
+      "peak_sampled_os_threads": 3,
+      "samples": 34,
+      "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"test\",\n  \"correct\": 384,\n  \"n\": 467,\n  \"accuracy\": 82.22698072805139,\n  \"scoring_seconds\": 0.05175430000053893\n}\n",
+      "stderr": ""
+    }
+  ],
+  "backend_info_parent": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "vcomp",
+      "filepath": "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ]
+}

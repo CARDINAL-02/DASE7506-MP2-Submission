@@ -1,0 +1,19 @@
+{
+  "criterion": "validation accuracy, hard accuracy, smaller assets, earlier run",
+  "winner": {
+    "name": "combined-lr-0.01-s0",
+    "accuracy": 92.60651629072682,
+    "hard_accuracy": 83.38028169014085,
+    "correct": 739,
+    "n": 798,
+    "hard_n": 355,
+    "asset_bytes": 49875,
+    "train_seconds": 3.277536499999769,
+    "seed": 0,
+    "features": "combined",
+    "parameter": 0.01,
+    "kind": "lr",
+    "warnings": []
+  },
+  "total_seconds": 97.39941920000001
+}

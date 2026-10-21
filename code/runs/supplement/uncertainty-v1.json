@@ -1,0 +1,67 @@
+{
+  "margin_definition": "highest minus second-highest valid candidate raw logit; no probability calibration",
+  "quartile_edges": [
+    0.0,
+    0.3031552973229328,
+    0.8546579857445522,
+    1.6341593029927686,
+    6.736977852132248
+  ],
+  "quartiles": [
+    {
+      "quartile": 1,
+      "n": 199,
+      "lower": 0.0,
+      "upper": 0.3031552973229328,
+      "accuracy": 96.98492462311557
+    },
+    {
+      "quartile": 2,
+      "n": 198,
+      "lower": 0.3031552973229328,
+      "upper": 0.8546579857445522,
+      "accuracy": 89.8989898989899
+    },
+    {
+      "quartile": 3,
+      "n": 199,
+      "lower": 0.8546579857445522,
+      "upper": 1.6341593029927686,
+      "accuracy": 93.96984924623115
+    },
+    {
+      "quartile": 4,
+      "n": 199,
+      "lower": 1.6341593029927686,
+      "upper": 6.736977852132248,
+      "accuracy": 89.44723618090453
+    }
+  ],
+  "multi_valid_n": 795,
+  "single_valid": {
+    "n": 3,
+    "model_accuracy": 100.0,
+    "majority_accuracy": 100.0
+  },
+  "all_invalid": {
+    "n": 0,
+    "model_accuracy": null,
+    "majority_accuracy": null
+  },
+  "index_disagreement": {
+    "n": 550,
+    "model_accuracy": 91.81818181818183,
+    "majority_accuracy": 82.54545454545455
+  },
+  "answer_disagreement": {
+    "n": 87,
+    "model_accuracy": 72.41379310344827,
+    "majority_accuracy": 13.793103448275861
+  },
+  "answer_agreement": {
+    "n": 711,
+    "model_accuracy": 95.0773558368495,
+    "majority_accuracy": 95.0773558368495
+  },
+  "caveat": "Descriptive validation bins after model selection; duplicate final answers can create near-zero candidate margins; no test calibration or threshold tuning."
+}

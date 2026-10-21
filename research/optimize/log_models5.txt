@@ -1,0 +1,22 @@
+=== v3emb D 1149
+  logit 0.003 nit 140 loss 0.1329 12.1s
+plain lam=0.003 hard 84.79 all 93.23 (301)
+  logit 0.01 nit 93 loss 0.1643 8.6s
+plain lam=0.01 hard 85.07 all 93.36 (302)
+  logit 0.02 nit 65 loss 0.1819 5.5s
+plain lam=0.02 hard 84.23 all 92.98 (299)
+  logit 0.03 nit 52 loss 0.1920 4.6s
+plain lam=0.03 hard 83.94 all 92.86 (298)
+  logit 0.05 nit 41 loss 0.2049 3.6s
+plain lam=0.05 hard 84.79 all 93.23 (301)
+  logit 0.1 nit 28 loss 0.2228 2.5s
+plain lam=0.1 hard 84.23 all 92.98 (299)
+  logit 0.2 nit 22 loss 0.2413 2.0s
+plain lam=0.2 hard 83.94 all 92.86 (298)
+distinct lam=0.003 hard 84.79 all 93.23 (301)
+distinct lam=0.01 hard 85.35 all 93.48 (303)
+distinct lam=0.02 hard 84.51 all 93.11 (300)
+distinct lam=0.03 hard 84.51 all 93.11 (300)
+distinct lam=0.05 hard 84.51 all 93.11 (300)
+distinct lam=0.1 hard 84.79 all 93.23 (301)
+distinct lam=0.2 hard 83.66 all 92.73 (297)

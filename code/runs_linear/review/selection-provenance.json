@@ -1,0 +1,23 @@
+{
+  "purpose": "Post-review verification of saved train-only OOF scores; not a pre-test selection record.",
+  "data_split": "train",
+  "folds": 5,
+  "grouping": "whole questions, including all four candidates",
+  "cache_sha256": "b53739876a268dbcddad238f4f7e9af1e5335cab3a32c3b04611f80ae5a87247",
+  "results": {
+    "linear": {
+      "hard_correct": 1712,
+      "hard_n": 2114,
+      "hard_accuracy": 80.98391674550615
+    },
+    "proxy_ensemble": {
+      "hard_correct": 1705,
+      "hard_n": 2114,
+      "hard_accuracy": 80.65279091769158
+    }
+  },
+  "proxy_definition": "Linear + one MLP seed 0 at 30 epochs + embedding-only, weights 3/2/1.",
+  "tested_ensemble_definition": "Linear + average of three MLP seeds with validation-selected epochs + embedding-only.",
+  "limitation": "Proxy differs from tested ensemble; seven-question edge is small, not established superiority.",
+  "history": "Ensemble test preceded completed OOF analysis, which preceded final linear freeze/test; prior test exposure is disclosed."
+}

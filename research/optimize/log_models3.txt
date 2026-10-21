@@ -1,0 +1,6 @@
+=== v2emb D 1078
+HGB it200 lr0.05 leaf31 (30s) all 89.97 hard 77.46 (275)
+HGB it400 lr0.03 leaf31 (92s) all 89.35 hard 76.06 (270)
+HGB it300 lr0.05 leaf63 (155s) all 90.10 hard 77.75 (276)
+ET n400 leaf5 mfsqrt (33s) all 87.34 hard 71.55 (254)
+ET n600 leaf10 mf0.3 (168s) all 88.22 hard 73.52 (261)

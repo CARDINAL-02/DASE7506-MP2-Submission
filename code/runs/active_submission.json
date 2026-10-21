@@ -1,0 +1,8 @@
+{
+  "version": "v4-linear",
+  "checkpoint": "runs_linear/model_bundle",
+  "method": "submission.py",
+  "score": "runs_linear/test-score.json",
+  "freeze": "runs_linear/freeze.json",
+  "selection": "train-only grouped OOF favored linear (80.98 vs 80.65); validation 93.73/85.92; frozen before final test; prior test evaluations disclosed"
+}

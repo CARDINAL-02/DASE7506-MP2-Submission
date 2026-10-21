@@ -1,0 +1,19 @@
+{
+  "purpose": "Train-only grouped 5-fold OOF comparison used to prefer the linear model over the validation-selected ensemble.",
+  "split": "train",
+  "folds": 5,
+  "grouping": "one question per group; all four candidates stay in the same fold",
+  "hard_questions": 2114,
+  "hard_subset_definition": ">=2 distinct non-None parsed answers",
+  "oof_hard_accuracy_percent": {
+    "v2_listwise_linear": 80.98,
+    "v2_ensemble_linear_mlp_embedding": 80.65,
+    "v2_listwise_mlp_seed0": 79.56,
+    "v2_embedding_only": 77.53
+  },
+  "validation_hard_accuracy_percent": {
+    "v2_listwise_linear": 85.9155,
+    "v2_ensemble_linear_mlp_embedding": 87.3239
+  },
+  "note": "The ensemble's validation advantage did not appear on held-out training questions, so the final choice used the linear model. The final test was run once after freezing; both v2 test evaluations are disclosed in the report."
+}

@@ -1,0 +1,35 @@
+{
+  "answer_surface-vs-answer": {
+    "only_first_correct": 27,
+    "only_second_correct": 14,
+    "delta_pp": 1.6290726817042605,
+    "paired_bootstrap_95_pp": [
+      0.12531328320802004,
+      3.258145363408521
+    ]
+  },
+  "answer_surface_embedding-vs-answer_surface": {
+    "only_first_correct": 19,
+    "only_second_correct": 3,
+    "delta_pp": 2.0050125313283207,
+    "paired_bootstrap_95_pp": [
+      0.8771929824561403,
+      3.258145363408521
+    ]
+  },
+  "v2-vs-v1": {
+    "only_first_correct": 10,
+    "only_second_correct": 6,
+    "delta_pp": 0.5012531328320802,
+    "paired_bootstrap_95_pp": [
+      -0.5012531328320802,
+      1.5037593984962405
+    ]
+  },
+  "bootstrap": {
+    "seed": 20261021,
+    "resamples": 10000,
+    "unit": "question",
+    "selection_corrected": false
+  }
+}

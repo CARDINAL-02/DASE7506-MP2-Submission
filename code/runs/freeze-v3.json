@@ -1,0 +1,124 @@
+{
+  "version": "v3",
+  "selected": {
+    "name": "listwise-dense-0.1",
+    "accuracy": 93.60902255639097,
+    "hard_accuracy": 85.63380281690141,
+    "correct": 747,
+    "n": 798,
+    "hard_n": 355,
+    "asset_bytes": 27702,
+    "fit_seconds": 1.2137062000001606,
+    "success": true,
+    "iterations": 41,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+  },
+  "target_test_accuracy": 83.5,
+  "prior_v1_v2_test_known": true,
+  "test_policy": "Keep validation-selected v3 regardless of test; no further search or rollback.",
+  "selection_source": "runs/v3/results.json",
+  "asset_bytes": 27702,
+  "assets": {
+    "runs\\model_bundle_v3\\config.json": {
+      "sha256": "0c6f63764666ac9c79fb568d78bf8017cc1c81b4c6448e69c7cad7e78eae0c48",
+      "bytes": 42
+    },
+    "runs\\model_bundle_v3\\weights.npz": {
+      "sha256": "95423e37b39105a2f9feb98937f17621909155033141bed5e9bd82474edd4495",
+      "bytes": 27660
+    }
+  },
+  "sources": {
+    "analyze.py": "2ef09b4e422984dc6fdcecd995afe16f4d57f50eeec863977fb18859ab4cb54f",
+    "baseline_first.py": "2a357a904cf21941ad91bcd3b057fd5890dc58ddcbb500af09e71f8797264c41",
+    "check_data.py": "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "features.py": "beadf6847cedd867ba65ae5d684111cc28cd0d728e99ff6cdaad9c88c6499a5b",
+    "finalize.py": "3315ace2250940632a93198d8ae6f0bc15cc27ad3bd4ea2c9d8c6bf298e868b3",
+    "finalize_v2.py": "24998928c3c226910d7c7e5054dd88e1af1ed43ba23cad91d03f6cb0daf5e4e5",
+    "finalize_v3.py": "b6325aa4f760579190c4d3a555798497c8e9a88487c6f3f195f385cf9d79db5f",
+    "hardware_probe.py": "439e303b3b0cf117cff94d8644f19dc0539193482019e9efd1fbc96dbe170db9",
+    "make_report.py": "61dee557717075a92ad91471b5b26973d687551be6733bb068997a38fe478967",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "report_final.py": "1a2390bf0f92dbf63806a4a4621c2fbeb5bd04f0e0a8f00612d7709b587a3c90",
+    "report_revision.py": "7c140a7ebdd1833d417cfff9ad9352c48b297d6a9dae7d045446a5f9aae2a9c3",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "submission.py": "964c44e1ef27d5e9c0e42fe340a0ca7a631c501dc50ed1cd0d7f7d14f97f262c",
+    "supplement.py": "8fb4766998fb92626161fcc7204e094bdd4227ba7699ee91231473305879fb57",
+    "supplement_analysis.py": "2e13a2b457a1399cacd99173c2e52f57d86cabbfb10fb8741e1df966c1119a69",
+    "supplement_evidence.py": "10d58e5c200522b394ee3723a897f37e745aced1b03d878b3acfa0166f181aac",
+    "supplement_features.py": "1432d64a8e09dacca497daf73aa38f344c1fb8dc152d09cea1fa92eff133464d",
+    "supplement_method.py": "c893dea7ea7f10420fe6951381329b4c81166bdcc071bc49759770b53ef40ec1",
+    "test_selection.py": "43904020faccaa73ce746c042c8c8355b158a0cda60af22054e1061ff0cddeec",
+    "test_supplement.py": "162546557580d1740503b110c92ff7f1b9fda03ba3dacc2aaa754d6df6ec1de1",
+    "test_v3.py": "f6266e6b42fba229d8fb01d3c26493d736ee81e1b76a045a634e34002cbdf8f9",
+    "train.py": "e4a5260b0ec50d90be01be0539f83d68c65c45be05ce45b653676dff2a147a37",
+    "train_v3.py": "28b31cfc16159558d18823ced649db7f4f1dd9d4ceb56fc69b55717ae63d42de",
+    "v3_features.py": "6132faaaf383d771c99bee37db085d952b229d499bcbc539e1dc0f4dd1846f89",
+    "v3_method.py": "b9f20798345a77b4ac7fef43f38f6249a623337d32f59f29cbd9b18113ff8010"
+  },
+  "thread_env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "timestamp_utc": "2026-10-21T14:53:44Z",
+  "validation_total_seconds": 2.3568555999991077,
+  "validation_processes": [
+    {
+      "command": [
+        "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+        "predict.py",
+        "--method",
+        "v3_method.py",
+        "--checkpoint",
+        "runs\\model_bundle_v3",
+        "--split",
+        "validation",
+        "--output",
+        "runs\\validation-v3-predictions.json"
+      ],
+      "peak_sampled_os_threads": 3,
+      "samples": 162,
+      "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"validation\", \"prediction_seconds\": 1.542489100000239}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+        "score_predictions.py",
+        "--split",
+        "validation",
+        "--predictions",
+        "runs\\validation-v3-predictions.json",
+        "--output",
+        "runs\\validation-v3-score.json"
+      ],
+      "peak_sampled_os_threads": 3,
+      "samples": 37,
+      "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"validation\",\n  \"correct\": 747,\n  \"n\": 798,\n  \"accuracy\": 93.60902255639098,\n  \"scoring_seconds\": 0.07584249999854364\n}\n",
+      "stderr": ""
+    }
+  ],
+  "audit_process": {
+    "command": [
+      "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+      "predict.py",
+      "--method",
+      "v3_method.py",
+      "--checkpoint",
+      "runs\\model_bundle_v3",
+      "--split",
+      "audit",
+      "--data-dir",
+      "runs\\audit_inputs",
+      "--output",
+      "runs\\audit-v3-predictions.json"
+    ],
+    "peak_sampled_os_threads": 3,
+    "samples": 32,
+    "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"audit\", \"prediction_seconds\": 0.04032029999871156}\n",
+    "stderr": ""
+  }
+}

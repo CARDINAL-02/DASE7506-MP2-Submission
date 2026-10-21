@@ -1,0 +1,170 @@
+{
+  "winner": "combined-lr-0.01-s0",
+  "winner_only_correct": 63,
+  "majority_only_correct": 12,
+  "both_wrong": 47,
+  "paired_delta_pp": 6.390977443609022,
+  "paired_bootstrap_95": [
+    4.385964912280701,
+    8.521303258145362
+  ],
+  "bootstrap_seed": 20261021,
+  "bootstrap_samples": 10000,
+  "mlp_seed_accuracy_mean": 92.35588972431079,
+  "mlp_seed_accuracy_std": 0.0,
+  "examples": [
+    {
+      "kind": "improvement",
+      "id": "gsm8k:e0bce5638f28ceb61a610767278059aec4a642fdcd584761a2df8491c7ef6c46",
+      "question": "Jay went to watch a singer in a one hour 20 minutes concert.  If there was a 10-minute intermission, and all the songs were 5 minutes except for one song that lasted 10 minutes, how many songs did she sing?",
+      "answers": [
+        "16",
+        "14",
+        "13",
+        "12"
+      ],
+      "selected": 2,
+      "majority": 0,
+      "correct_indices": [
+        2
+      ],
+      "selected_text": "Jay attended a concert that started at 9:00 AM and ended at 9:40 AM. This is a **1-hour 20-minute** concert, which means the total duration is:\n\n$$\n60 + 20 = 80 \\text{ minutes}\n$$\n\nThe concert includes an **intermission** of 10 minutes, so the actual time she sang is:\n\n$$\n80 - 10 = 70 \\text{ minutes}\n$$\n\nEach song is **5 minutes** except for **one song that lasted 10 minutes**. Let\u2019s denote the number of songs she sang as $ x $.\n\n- The time taken for the **other $ x - 1 $** songs is $ 5(x - 1) $ minutes.\n- The time for the **10-minute song** is 10 minutes.\n\nSo the total time is:\n\n$$\n5(x - 1) + 10 = 70\n$$\n\nSolving:\n\n$$\n5x - 5 + 10 = 70 \\\\\n5x + 5 = 70 \\\\\n5x = 65 \\\\\nx = 13\n$$\n\n### Final Answer:\n\n$$\n\\boxed{13}\n$$"
+    },
+    {
+      "kind": "improvement",
+      "id": "gsm8k:8278949f5804b3684c922e60454437d60504a36370de6ec93d69445f5bfadb74",
+      "question": "Eddy\u2019s spider plant produces 2 baby plants 2 times a year.  After 4 years, how many baby plants will the mother plant have produced?",
+      "answers": [
+        "8",
+        "16",
+        "4",
+        "4"
+      ],
+      "selected": 1,
+      "majority": 2,
+      "correct_indices": [
+        1
+      ],
+      "selected_text": "We are told:\n\n- Eddy\u2019s spider plant produces **2 baby plants 2 times a year**.\n- After **4 years**, how many baby plants will the mother plant have produced?\n\n### Step-by-step:\n\n- Each year, the plant produces 2 baby plants.\n- After 1 year: 2 baby plants  \n- After 2 years: 2 \u00d7 2 = 4 baby plants  \n- After 3 years: 2 \u00d7 4 = 8 baby plants  \n- After 4 years: 2 \u00d7 8 = **16 baby plants**\n\n### Final answer:\n\n#### <numeric answer> 16"
+    },
+    {
+      "kind": "improvement",
+      "id": "gsm8k:b4dc0fdfacb68de5097fa404c8c8d455bd99dfbd4bbfb1d393dd5c04d7356c0f",
+      "question": "Tanika is selling boxes of crackers for her scout troop's fund-raiser. On Saturday, she sold 60 boxes. On Sunday, she sold 50% more than on Saturday. How many boxes did she sell, in total, over the two days?",
+      "answers": [
+        "90",
+        "90",
+        "90",
+        "150"
+      ],
+      "selected": 3,
+      "majority": 0,
+      "correct_indices": [
+        3
+      ],
+      "selected_text": "We are given:\n\n- On **Saturday**, Tanika sold **60** boxes.\n- On **Sunday**, she sold **50% more** than on Saturday.\n\n### Step 1: Calculate Sunday sales\n\nSince she sold **50% more** than Saturday, we calculate:\n\n$$\n50\\% \\text{ of } 60 = 0.5 \\times 60 = 30\n$$\n\nSo, on Sunday, she sold:\n\n$$\n60 + 30 = 90 \\text{ boxes}\n$$\n\n### Step 2: Total sales over two days\n\n$$\n60 + 90 = 150\n$$\n\n### Final answer:\n\n$$\n\\boxed{150}\n$$"
+    },
+    {
+      "kind": "regression",
+      "id": "gsm8k:53720078a6bffa4e141a7bf22a1e6a86239cb349bca7fe908c4fbccd6c1bc290",
+      "question": "Jason and Jeremy want to paint their wall white and agreed to split the cost of the paint. A gallon of paint costs $45 and can cover up to 400 square feet. How much will each of them contribute to the cost of the paint if their walls have a total area of 1600 square feet and will need a second coat?",
+      "answers": [
+        null,
+        "180",
+        "90",
+        "45"
+      ],
+      "selected": 2,
+      "majority": 1,
+      "correct_indices": [
+        1
+      ],
+      "selected_text": "We are given:\n\n- A gallon of paint costs **$45**.\n- A gallon covers **400 square feet**.\n- Jason and Jeremy want to paint a **total wall area of 1600 square feet**.\n- They will need a **second coat**.\n\n---\n\n### Step 1: Find how many gallons are needed\n\nWe need to calculate how many gallons of paint are required to cover the wall.\n\n$$\n\\text{Gallons} = \\frac{\\text{Total area}}{\\text{Coverage per gallon}} = \\frac{1600}{400} = 4 \\text{ gallons}\n$$\n\n---\n\n### Step 2: Find the cost of 4 gallons\n\n$$\n\\text{Cost} = 4 \\times 45 = 180 \\text{ dollars}\n$$\n\n---\n\n### Step 3: Determine how much each person contributes\n\nSince the total cost is **$180**, and there are 2 people:\n\n$$\n\\text{Each person's contribution} = \\frac{180}{2} = 90 \\text{ dollars}\n$$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{90}\n$$"
+    },
+    {
+      "kind": "regression",
+      "id": "gsm8k:56e7a7136f0a8bc3addf7316db6e159c5e7e68725e472d14f6d8f84911b504d5",
+      "question": "Christy and her friend Tanya go to Target to buy some face moisturizer and body lotions. Christy spends twice as much as Tanya, who pays 50$ for two face moisturizers each and 60$ per body lotion, buying four of them. How much money did they spend together in total?",
+      "answers": [
+        "1020",
+        null,
+        "870",
+        "680"
+      ],
+      "selected": 2,
+      "majority": 0,
+      "correct_indices": [
+        0
+      ],
+      "selected_text": "Let's solve step by step:\n\n1. **Christy spends twice as much as Tanya**.\n2. **Tanya pays 50$ for two face moisturizers**.\n   - So, **Tanya spends 50$**.\n3. **Tanya pays 60$ per body lotion**.\n   - She buys **4 body lotions**, so she spends:  \n     $ 60 \\times 4 = 240 $.\n4. **Total Tanya's spending**:  \n   $ 50 + 240 = 290 $.\n5. **Christy spends twice as much as Tanya**:  \n   $ 2 \\times 290 = 580 $.\n6. **Total amount spent together**:  \n   $ 290 + 580 = \\boxed{870} $.\n\n### Final Answer: **870**."
+    },
+    {
+      "kind": "regression",
+      "id": "gsm8k:773786fcabb05faa06c66d6d093435b308e51cf550c4871924f6fd53f91dd9b8",
+      "question": "Isabelle gets a job so she can save enough money to go to a concert with her two brothers. Her ticket costs $20. Her brothers both get the children\u2019s discount, and each of their tickets cost $10. Her brothers have saved $5 between the two of them and Isabelle has saved $5. If her job pays $3 per week, how many weeks must she work to afford the tickets?",
+      "answers": [
+        "10",
+        "20",
+        "11",
+        "6"
+      ],
+      "selected": 1,
+      "majority": 0,
+      "correct_indices": [
+        0
+      ],
+      "selected_text": "Isabelle's total savings needed is:\n\n- Her brothers' tickets: $10 each \u2192 $20  \n- Her ticket: $20  \n- Total needed: $20 + $20 + $20 = **$60**\n\nShe saves $5 from her brothers and $5 from herself \u2192 total saved: **$10**\n\nHer job pays $3 per week. To save $60, she needs:\n\n$$\n\\frac{60}{3} = \\boxed{20} \\text{ weeks}\n$$\n\n#### <numeric answer> 20"
+    },
+    {
+      "kind": "both_wrong",
+      "id": "gsm8k:a43ceff49caf15e088df74a262ff9e052dd2007849dae692d80b5056583ef20f",
+      "question": "Yun had 20 paperclips initially, but then lost 12. Marion has 1/4 more than what Yun currently has, plus 7. How many paperclips does Marion have?",
+      "answers": [
+        "9",
+        "17",
+        "17",
+        "17"
+      ],
+      "selected": 3,
+      "majority": 1,
+      "correct_indices": [
+        0
+      ],
+      "selected_text": "We are given the following:\n\n- Yun had **20 paperclips** initially.\n- Then lost **12**, so **Yun currently has** $ 20 - 12 = 8 $ paperclips.\n\n- Marion has **$ \\frac{1}{4} $ more than what Yun currently has, plus 7**.\n\nSo, we calculate:\n\n$$\n\\text{Marion's paperclips} = 8 + \\left( \\frac{1}{4} \\times 8 \\right) + 7\n$$\n\n$$\n= 8 + 2 + 7 = 17\n$$\n\n### Final Answer:\n$$\n\\boxed{17}\n$$"
+    },
+    {
+      "kind": "both_wrong",
+      "id": "gsm8k:02e6a3586d4118e71421fdc68390a128f9deffd2e36cf200f9d29105c4e0e3e0",
+      "question": "Three different 6th grade classes are combining for a square dancing unit.  If possible, the teachers would like each male student to partner with a female student for the unit.  The first class has 17 males and 13 females, while the second class has 14 males and 18 females, and the third class has 15 males and 17 females.  When the classes are combined, how many students will be unable to partner with a student of the opposite gender?",
+      "answers": [
+        "48",
+        "48",
+        "45",
+        "2"
+      ],
+      "selected": 0,
+      "majority": 0,
+      "correct_indices": [
+        3
+      ],
+      "selected_text": "We are told that each male student must partner with a female student, and we need to find how many students **cannot** partner with a student of the opposite gender when all three classes are combined.\n\n### Step 1: Total number of students\n\n- **Class 1:** 17 males + 13 females = 30 students  \n- **Class 2:** 14 males + 18 females = 32 students  \n- **Class 3:** 15 males + 17 females = 32 students  \n\n**Total students = 30 + 32 + 32 = 94 students**\n\n---\n\n### Step 2: Total number of possible pairings\n\n- Each student must pair with exactly one student of the opposite gender.  \n- So, the total number of possible pairings is the **minimum** of the total number of males and females, since we can't pair more than one person with each gender.\n\n- **Males: 17 + 14 + 15 = 46**  \n- **Females: 13 + 18 + 17 = 48**\n\nSo, the **maximum number of possible pairings** is **46** (the number of males).\n\n---\n\n### Step 3: Find how many students are unable to partner\n\nWe subtract the number of students who can partner from the total number of students:\n\n$$\n94 - 46 = 48\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{48}\n$$"
+    },
+    {
+      "kind": "both_wrong",
+      "id": "gsm8k:d41771a33607bdaf7b3e00726d01e899fdd0d6e8b013369a93bcc90248c0c46b",
+      "question": "Tom buys 20 shares of a stock that costs $3 each.  He sells 10 of those shares for $4 each.  The rest of the shares end up doubling in value.  How much profit does he make?",
+      "answers": [
+        "100",
+        "80",
+        "40",
+        "100"
+      ],
+      "selected": 3,
+      "majority": 0,
+      "correct_indices": [
+        2
+      ],
+      "selected_text": "We are given:\n\n- Tom buys **20 shares** at **$3 each**, for a total of **$60**.\n- He sells **10 shares** at **$4 each**, for a total of **$40**.\n- The **remaining 10 shares** double in value, so they now cost **$3 \u00d7 2 = $6 each**.\n\nNow calculate the total profit:\n\n- Total profit = (Selling price - Cost price) \u00d7 number of shares sold  \n  = ($40 - $30) \u00d7 10  \n  = $10 \u00d7 10  \n  = **$100**\n\n### Final Answer:\n#### $100."
+    }
+  ]
+}

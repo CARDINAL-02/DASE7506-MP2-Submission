@@ -1,0 +1,8 @@
+H 256 wd 0.003 drop 0.0 seed 0 hard 86.48 all 93.98 (28s)
+H 256 wd 0.003 drop 0.0 seed 1 hard 85.63 all 93.61 (28s)
+H 256 wd 0.01 drop 0.0 seed 0 hard 85.92 all 93.73 (28s)
+H 256 wd 0.01 drop 0.0 seed 1 hard 85.07 all 93.36 (25s)
+H 512 wd 0.01 drop 0.2 seed 0 hard 85.63 all 93.61 (57s)
+H 512 wd 0.01 drop 0.2 seed 1 hard 84.79 all 93.23 (49s)
+H 512 wd 0.03 drop 0.2 seed 0 hard 85.35 all 93.48 (68s)
+H 512 wd 0.03 drop 0.2 seed 1 hard 85.92 all 93.73 (61s)

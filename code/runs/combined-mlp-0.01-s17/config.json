@@ -1,0 +1,5 @@
+{
+  "kind": "neural",
+  "features": "combined",
+  "layers": 2
+}

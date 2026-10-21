@@ -1,0 +1,12 @@
+mlp seed 0 selected epoch 40 val hard 85.92
+mlp seed 1 selected epoch 25 val hard 85.35
+mlp seed 2 selected epoch 35 val hard 86.48
+{
+  "validation_accuracy": 94.3609022556391,
+  "validation_hard_accuracy": 87.32394366197182,
+  "correct": 753,
+  "n": 798,
+  "hard_correct": 310,
+  "hard_n": 355,
+  "train_seconds": 60.064422999999806
+}

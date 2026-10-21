@@ -1,0 +1,12 @@
+D 1240
+  logit 0.003 nit 168 loss 0.1328 111.2s
+linear lam 0.003 hard 85.35 all 93.48
+  logit 0.01 nit 93 loss 0.1625 96.6s
+linear lam 0.01 hard 85.92 all 93.73
+  logit 0.03 nit 57 loss 0.1877 41.4s
+linear lam 0.03 hard 85.07 all 93.36
+  logit 0.1 nit 36 loss 0.2153 30.0s
+linear lam 0.1 hard 85.07 all 93.36
+mlp seed 0 ep 20 hard 85.07 all 93.36 (20s)
+mlp seed 1 ep 25 hard 86.20 all 93.86 (22s)
+mlp seed 2 ep 20 hard 85.63 all 93.61 (21s)

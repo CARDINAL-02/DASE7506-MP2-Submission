@@ -1,0 +1,23 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "split": "audit",
+  "ids": [
+    "interface-check-0",
+    "interface-check-1",
+    "interface-check-2",
+    "interface-check-3",
+    "interface-check-4",
+    "interface-check-5",
+    "interface-check-6"
+  ],
+  "selected": [
+    3,
+    0,
+    2,
+    2,
+    1,
+    3,
+    0
+  ],
+  "prediction_seconds": 0.02356670000062877
+}

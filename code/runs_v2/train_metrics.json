@@ -1,0 +1,9 @@
+{
+  "validation_accuracy": 94.3609022556391,
+  "validation_hard_accuracy": 87.32394366197182,
+  "correct": 753,
+  "n": 798,
+  "hard_correct": 310,
+  "hard_n": 355,
+  "train_seconds": 60.064422999999806
+}

@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-10-21T16:12:28Z",
+  "sources": {
+    "train_v2.py": "75c9eac1262ce4d8827031867e940430615fbe70ccd7096a6dd9bcc5ce8d1fde",
+    "features_v2.py": "02fb170b79b24541764f1ee2788107aff83c88b75e5ff4c661dc2cf32f531c3f",
+    "submission.py": "184adca0b21c9f2b0ee1c586febf2c8927ef9dd76b8eb0838f6ab17fbb9b9dd6",
+    "features.py": "beadf6847cedd867ba65ae5d684111cc28cd0d728e99ff6cdaad9c88c6499a5b",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "test_selection.py": "43904020faccaa73ce746c042c8c8355b158a0cda60af22054e1061ff0cddeec"
+  },
+  "assets": {
+    "runs_linear\\model_bundle\\config.json": {
+      "sha256": "cebfe75af6bca007ef81d67f04518c7c37d3d90102ccb0e0c2f000bc91d72263",
+      "bytes": 139
+    },
+    "runs_linear\\model_bundle\\weights.npz": {
+      "sha256": "6a8b88c2985e127635390d2a1f029a7076d255df40bf6e9cc4fc4b7dd2ce4f7f",
+      "bytes": 25303
+    }
+  },
+  "config": {
+    "kind": "linear_v2",
+    "features": "v2emb",
+    "lambda": 0.01,
+    "hard_subset_definition": ">=2 distinct non-None parsed answers"
+  },
+  "asset_bytes": 25442
+}

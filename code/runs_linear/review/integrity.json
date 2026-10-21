@@ -1,0 +1,122 @@
+{
+  "created_utc": "2026-10-21T18:48:13Z",
+  "purpose": "Post-test reproduction and integrity addendum; not a replacement pre-test freeze.",
+  "original_freeze_sha256": "468b85bb12253ab9230cdc5acb21417c8eaef88f937a3fbd865fb35a3fc4e591",
+  "original_freeze_sources_match": true,
+  "original_freeze_assets_match": true,
+  "sources": {
+    "submission.py": "184adca0b21c9f2b0ee1c586febf2c8927ef9dd76b8eb0838f6ab17fbb9b9dd6",
+    "features_v2.py": "02fb170b79b24541764f1ee2788107aff83c88b75e5ff4c661dc2cf32f531c3f",
+    "features.py": "beadf6847cedd867ba65ae5d684111cc28cd0d728e99ff6cdaad9c88c6499a5b",
+    "train_linear_v2.py": "bef46d11d4900f52ae6df79903c7841a374321c0ba899330edb3a7c46e0c79da",
+    "train_v2.py": "75c9eac1262ce4d8827031867e940430615fbe70ccd7096a6dd9bcc5ce8d1fde",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "prepare_final_submission.py": "cab14194df8e95aea2a8bdf5dc1e5843aa77f343efce479de386481200662529"
+  },
+  "assets": {
+    "runs_linear\\model_bundle\\config.json": {
+      "sha256": "cebfe75af6bca007ef81d67f04518c7c37d3d90102ccb0e0c2f000bc91d72263",
+      "bytes": 139
+    },
+    "runs_linear\\model_bundle\\weights.npz": {
+      "sha256": "6a8b88c2985e127635390d2a1f029a7076d255df40bf6e9cc4fc4b7dd2ce4f7f",
+      "bytes": 25303
+    }
+  },
+  "stored_files_bytes": 25442,
+  "learned_array_payload_bytes": 25872,
+  "configuration_bytes": 139,
+  "conservative_uncompressed_asset_bytes": 26395,
+  "measurement_rule": "Uncompressed NPZ member sizes including NPY headers, plus JSON configuration.",
+  "thread_env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "test_total_seconds": 1.7556532999951742,
+  "test_processes": [
+    {
+      "command": [
+        "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+        "predict.py",
+        "--method",
+        "submission.py",
+        "--checkpoint",
+        "runs_linear\\model_bundle",
+        "--split",
+        "test",
+        "--output",
+        "runs_linear\\review\\test-predictions.json"
+      ],
+      "peak_sampled_os_threads": 3,
+      "samples": 112,
+      "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"test\", \"prediction_seconds\": 0.9490424000032363}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+        "score_predictions.py",
+        "--split",
+        "test",
+        "--predictions",
+        "runs_linear\\review\\test-predictions.json",
+        "--output",
+        "runs_linear\\review\\test-score.json"
+      ],
+      "peak_sampled_os_threads": 3,
+      "samples": 33,
+      "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"test\",\n  \"correct\": 391,\n  \"n\": 467,\n  \"accuracy\": 83.72591006423983,\n  \"scoring_seconds\": 0.05221939999319147\n}\n",
+      "stderr": ""
+    }
+  ],
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 391,
+    "n": 467,
+    "accuracy": 83.72591006423983,
+    "scoring_seconds": 0.05221939999319147
+  },
+  "saved_predictions_match": true,
+  "audit_process": {
+    "command": [
+      "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Scripts\\python.exe",
+      "predict.py",
+      "--method",
+      "submission.py",
+      "--checkpoint",
+      "runs_linear\\model_bundle",
+      "--split",
+      "audit",
+      "--data-dir",
+      "runs/audit_inputs",
+      "--output",
+      "runs_linear\\review\\audit-predictions.json"
+    ],
+    "peak_sampled_os_threads": 3,
+    "samples": 35,
+    "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"audit\", \"prediction_seconds\": 0.05605210000067018}\n",
+    "stderr": ""
+  },
+  "audit_n": 7,
+  "train_only_reconstruction": {
+    "exact_arrays": {
+      "mean": true,
+      "scale": true,
+      "weights": true
+    },
+    "seconds": 11.29537999999593,
+    "optimizer_status_on_reconstruction": {
+      "success": true,
+      "iterations": 50,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+    },
+    "training_threads": 4,
+    "original_assets_overwritten": false
+  },
+  "note": "Reproducing the fixed final model after test is not a new method-selection trial."
+}

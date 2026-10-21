@@ -1,0 +1,11 @@
+bag 0 hard 85.35
+bag 1 hard 87.04
+bag 2 hard 83.66
+bag 3 hard 82.54
+bag 4 hard 83.94
+bag 5 hard 83.38
+bag 6 hard 84.51
+bag 7 hard 85.63
+bag 8 hard 84.51
+bag 9 hard 85.35
+BAG lin hard 85.07 all 93.36

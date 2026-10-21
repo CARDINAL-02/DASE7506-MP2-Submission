@@ -1,0 +1,23 @@
+{
+  "observed_utc": "2026-10-21T10:47:56Z",
+  "cpu": "Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz",
+  "ram_physical_bytes": 16943685632,
+  "ram_gib": 15.780036926269531,
+  "backend_info": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\dell\\Desktop\\7506\u4f5c\u4e1a2\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "thread_count_after_validation_prediction": 7,
+  "logical_cpus": 16,
+  "context": "later validation-only prediction process; no test score rerun",
+  "thread_interpretation": "Loaded backend caps and sampled process thread count; not historical monitoring of original final test.",
+  "predictions": 798
+}

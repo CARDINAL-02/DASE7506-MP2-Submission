@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+report/*.png
+dist/
+# Course bank is restored from the original course release; retain manifest/license/notice.
+code/data/**/*.npz
+code/data/**/*.jsonl
+# Do not ignore code/runs/: it contains small frozen assets and reproducibility evidence.

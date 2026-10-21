@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-10-21T15:45:16Z",
+  "sources": {
+    "train_v2.py": "75c9eac1262ce4d8827031867e940430615fbe70ccd7096a6dd9bcc5ce8d1fde",
+    "features_v2.py": "02fb170b79b24541764f1ee2788107aff83c88b75e5ff4c661dc2cf32f531c3f",
+    "submission.py": "c49cb2e7f99ad434234d9c84e84602d860f093eb12d7deca766c6a3f590cf66a",
+    "features.py": "beadf6847cedd867ba65ae5d684111cc28cd0d728e99ff6cdaad9c88c6499a5b",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "test_selection.py": "43904020faccaa73ce746c042c8c8355b158a0cda60af22054e1061ff0cddeec"
+  },
+  "assets": {
+    "runs_v2\\model_bundle\\config.json": {
+      "sha256": "3fed7bc18a967746c6f3ac9e06d90f9f19fb76756fa1a8c36bdbfddd5ffbbfd0",
+      "bytes": 419
+    },
+    "runs_v2\\model_bundle\\weights.npz": {
+      "sha256": "0cc0b69912097d10a2b258f05714bd694fed5be266174fc1be65cac5ccead4f0",
+      "bytes": 3232621
+    }
+  },
+  "train_metrics": {
+    "validation_accuracy": 94.3609022556391,
+    "validation_hard_accuracy": 87.32394366197182,
+    "correct": 753,
+    "n": 798,
+    "hard_correct": 310,
+    "hard_n": 355,
+    "train_seconds": 60.064422999999806
+  },
+  "config": {
+    "kind": "ensemble_v2",
+    "features": "v2emb",
+    "hidden": 128,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "linear_lambda": 0.01,
+    "emb_lambda": 0.001,
+    "epochs_per_seed": [
+      40,
+      25,
+      35
+    ],
+    "weight_decay": 0.003,
+    "learning_rate": 0.001,
+    "batch": 512,
+    "ensemble_weights": [
+      3.0,
+      2.0,
+      1.0
+    ],
+    "hard_subset_definition": ">=2 distinct non-None parsed answers"
+  },
+  "asset_bytes": 3233040
+}

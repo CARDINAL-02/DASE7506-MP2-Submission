@@ -1,0 +1,3 @@
+pairs (16542, 1078)
+pair mlp seed 0 hard 84.51 all 93.11 (13s)
+pair mlp seed 1 hard 83.94 all 92.86 (11s)

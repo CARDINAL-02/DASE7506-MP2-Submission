@@ -1,0 +1,67 @@
+{
+  "selected": {
+    "name": "combined-lr-0.01-s0",
+    "accuracy": 92.60651629072682,
+    "hard_accuracy": 83.38028169014085,
+    "correct": 739,
+    "n": 798,
+    "hard_n": 355,
+    "asset_bytes": 49875,
+    "train_seconds": 3.277536499999769,
+    "seed": 0,
+    "features": "combined",
+    "parameter": 0.01,
+    "kind": "lr",
+    "warnings": []
+  },
+  "sources": {
+    "analyze.py": "2ef09b4e422984dc6fdcecd995afe16f4d57f50eeec863977fb18859ab4cb54f",
+    "baseline_first.py": "2a357a904cf21941ad91bcd3b057fd5890dc58ddcbb500af09e71f8797264c41",
+    "check_data.py": "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "features.py": "beadf6847cedd867ba65ae5d684111cc28cd0d728e99ff6cdaad9c88c6499a5b",
+    "finalize.py": "3315ace2250940632a93198d8ae6f0bc15cc27ad3bd4ea2c9d8c6bf298e868b3",
+    "make_report.py": "61dee557717075a92ad91471b5b26973d687551be6733bb068997a38fe478967",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "submission.py": "964c44e1ef27d5e9c0e42fe340a0ca7a631c501dc50ed1cd0d7f7d14f97f262c",
+    "test_selection.py": "43904020faccaa73ce746c042c8c8355b158a0cda60af22054e1061ff0cddeec",
+    "train.py": "e4a5260b0ec50d90be01be0539f83d68c65c45be05ce45b653676dff2a147a37"
+  },
+  "assets": {
+    "runs\\model_bundle\\config.json": {
+      "sha256": "e4f6090aac7d094d00a5c462004608a9935e324d2106a99af90c00b91823ecab",
+      "bytes": 67
+    },
+    "runs\\model_bundle\\weights.npz": {
+      "sha256": "9b1836b4fb2204ec3c0212c37b0cfb97890b7326344e7e9d8718f817d4254814",
+      "bytes": 50784
+    }
+  },
+  "asset_bytes": 50851,
+  "timestamp_utc": "2026-10-21T10:17:28Z",
+  "validation_seconds": 1.4723916000002646,
+  "baseline-validation_seconds": 0.9673087999999552,
+  "first-validation_seconds": 0.9961075999999593,
+  "test_total_seconds": 1.2270361000000776,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu": "Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz",
+    "logical_cpus": 16,
+    "threads": 4,
+    "reference_machine_verified": false,
+    "ram_physical_bytes": 16943685632,
+    "hardware_observation_utc": "2026-10-21T10:47:56Z",
+    "hardware_observation_source": "runs/supplement/hardware.json (later observation)"
+  },
+  "pip_freeze": [
+    "cloudpickle==3.1.2",
+    "joblib==1.6.0",
+    "numpy==2.5.3",
+    "scikit-learn==1.8.0",
+    "scipy==1.17.1",
+    "threadpoolctl==3.7.0"
+  ]
+}

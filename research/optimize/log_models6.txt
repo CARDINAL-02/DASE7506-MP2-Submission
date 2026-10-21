@@ -1,0 +1,62 @@
+plain lam=0.005 hard 85.92 all 93.73
+plain lam=0.01  hard 85.92 all 93.73
+plain lam=0.02  hard 84.51 all 93.11
+plain lam=0.05  hard 84.79 all 93.23
+plain lam=0.1   hard 84.51 all 93.11
+d05   lam=0.005 hard 85.92 all 93.73
+d05   lam=0.01  hard 86.48 all 93.98
+d05   lam=0.02  hard 84.51 all 93.11
+d05   lam=0.05  hard 83.66 all 92.73
+d05   lam=0.1   hard 83.94 all 92.86
+d1    lam=0.005 hard 84.79 all 93.23
+d1    lam=0.01  hard 86.48 all 93.98
+d1    lam=0.02  hard 85.35 all 93.48
+d1    lam=0.05  hard 83.94 all 92.86
+d1    lam=0.1   hard 84.51 all 93.11
+d2    lam=0.005 hard 84.79 all 93.23
+d2    lam=0.01  hard 86.48 all 93.98
+d2    lam=0.02  hard 85.35 all 93.48
+d2    lam=0.05  hard 84.79 all 93.23
+d2    lam=0.1   hard 84.23 all 92.98
+inv3  lam=0.005 hard 85.92 all 93.73
+inv3  lam=0.01  hard 84.79 all 93.23
+inv3  lam=0.02  hard 84.51 all 93.11
+inv3  lam=0.05  hard 84.23 all 92.98
+inv3  lam=0.1   hard 84.23 all 92.98
+inv2  lam=0.005 hard 86.48 all 93.98
+inv2  lam=0.01  hard 86.20 all 93.86
+inv2  lam=0.02  hard 85.35 all 93.48
+inv2  lam=0.05  hard 84.79 all 93.23
+inv2  lam=0.1   hard 83.94 all 92.86
+bal   lam=0.005 hard 85.63 all 93.61
+bal   lam=0.01  hard 86.20 all 93.86
+bal   lam=0.02  hard 85.92 all 93.73
+bal   lam=0.05  hard 85.07 all 93.36
+bal   lam=0.1   hard 84.23 all 92.98
+mix   lam=0.005 hard 85.63 all 93.61
+mix   lam=0.01  hard 85.92 all 93.73
+mix   lam=0.02  hard 86.20 all 93.86
+mix   lam=0.05  hard 85.35 all 93.48
+mix   lam=0.1   hard 84.51 all 93.11
+v1comb hard 84.79
+emb hard 81.41
+TOP individuals:
+  86.48 93.98 inv2-0.005
+  86.48 93.98 d2-0.01
+  86.48 93.98 d1-0.01
+  86.48 93.98 d05-0.01
+  86.20 93.86 mix-0.02
+  86.20 93.86 inv2-0.01
+  86.20 93.86 bal-0.01
+  85.92 93.73 plain-0.01
+TOP ensembles:
+  86.76 94.11 ('inv2-0.005', 'd2-0.01')
+  86.76 94.11 ('inv2-0.005', 'd1-0.01')
+  86.48 93.98 ('inv2-0.005', 'd2-0.01', 'inv2-0.01')
+  86.48 93.98 ('inv2-0.005', 'd2-0.01', 'd1-0.01')
+  86.48 93.98 ('inv2-0.005', 'd2-0.01', 'd05-0.01')
+  86.48 93.98 ('inv2-0.005', 'd1-0.01', 'inv2-0.01')
+  86.48 93.98 ('inv2-0.005', 'd1-0.01', 'd05-0.01')
+  86.48 93.98 ('inv2-0.005', 'd05-0.01')
+  86.48 93.98 ('d2-0.01', 'd1-0.01', 'd05-0.01')
+  86.48 93.98 ('d2-0.01', 'd1-0.01')

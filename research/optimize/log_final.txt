@@ -1,0 +1,11 @@
+lin val hard 85.92
+mlp seed 0 best ep 40 val hard 85.92
+mlp seed 1 best ep 25 val hard 85.35
+mlp seed 2 best ep 35 val hard 86.48
+emb val hard 81.41
+ensemble train-z 3/2/1 val hard 87.32 all 94.36 (310)
+ensemble train-z 2/2/1 val hard 87.04 all 94.24 (309)
+ensemble train-z 1/1/1 val hard 86.48 all 93.98 (307)
+ensemble train-z 3/1/1 val hard 86.20 all 93.86 (306)
+ensemble train-z 2/1/1 val hard 86.20 all 93.86 (306)
+done

@@ -1,0 +1,15 @@
+plain lam=0.003 mean 80.41 sd 2.45 pooled 4341/2114 205.35
+plain lam=0.01  mean 80.97 sd 1.65 pooled 4353/2114 205.91
+plain lam=0.02  mean 80.54 sd 1.74 pooled 4344/2114 205.49
+plain lam=0.05  mean 80.11 sd 1.87 pooled 4335/2114 205.06
+plain lam=0.1   mean 80.58 sd 2.34 pooled 4345/2114 205.53
+d05   lam=0.003 mean 79.89 sd 2.50 pooled 4330/2114 204.82
+d05   lam=0.01  mean 80.73 sd 2.21 pooled 4348/2114 205.68
+d05   lam=0.02  mean 80.91 sd 1.86 pooled 4352/2114 205.87
+d05   lam=0.05  mean 80.43 sd 1.84 pooled 4342/2114 205.39
+d05   lam=0.1   mean 80.72 sd 2.30 pooled 4348/2114 205.68
+inv2  lam=0.003 mean 79.17 sd 2.35 pooled 4315/2114 204.12
+inv2  lam=0.01  mean 80.01 sd 2.08 pooled 4333/2114 204.97
+inv2  lam=0.02  mean 79.72 sd 1.83 pooled 4327/2114 204.68
+inv2  lam=0.05  mean 80.11 sd 1.51 pooled 4335/2114 205.06
+inv2  lam=0.1   mean 80.39 sd 2.20 pooled 4341/2114 205.35

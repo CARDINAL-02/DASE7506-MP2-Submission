@@ -1,0 +1,29 @@
+=== v2emb weighted
+none lam=0.003 hard 85.07 all 93.36 (3s)
+none lam=0.01 hard 85.92 all 93.73 (2s)
+none lam=0.03 hard 83.38 all 92.61 (1s)
+none lam=0.1 hard 84.51 all 93.11 (1s)
+none lam=0.2 hard 84.79 all 93.23 (1s)
+majwrong lam=0.003 hard 81.69 all 91.85 (5s)
+majwrong lam=0.01 hard 81.69 all 91.85 (3s)
+majwrong lam=0.03 hard 80.56 all 91.35 (2s)
+majwrong lam=0.1 hard 77.18 all 89.85 (1s)
+majwrong lam=0.2 hard 75.77 all 89.22 (1s)
+onecorrect lam=0.003 hard 82.82 all 92.36 (6s)
+onecorrect lam=0.01 hard 81.41 all 91.73 (3s)
+onecorrect lam=0.03 hard 80.28 all 91.23 (2s)
+onecorrect lam=0.1 hard 76.34 all 89.47 (1s)
+onecorrect lam=0.2 hard 75.49 all 89.10 (1s)
+distinct lam=0.003 hard 84.51 all 93.11 (4s)
+distinct lam=0.01 hard 86.48 all 93.98 (3s)
+distinct lam=0.03 hard 84.51 all 93.11 (1s)
+distinct lam=0.1 hard 83.94 all 92.86 (1s)
+distinct lam=0.2 hard 83.94 all 92.86 (1s)
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\7506作业2\optimize\models4.py", line 91, in <module>
+    with threadpool_limits(limits=8): main()
+                                      ^^^^^^
+  File "C:\Users\dell\Desktop\7506作业2\optimize\models4.py", line 66, in main
+    Xc,yc,hc,Xcv,ycv,hcv=load('train','combined'); Xce=load('train','embedding')[0]; Xcv_e=load('validation','embedding')[0]
+    ^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 6, got 3)

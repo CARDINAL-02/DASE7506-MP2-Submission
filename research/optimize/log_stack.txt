@@ -1,0 +1,15 @@
+fold 0 22s
+fold 1 18s
+fold 2 20s
+fold 3 18s
+fold 4 15s
+meta D 15
+meta listwise C=0.003 hard 86.76 all 94.11
+meta listwise C=0.01 hard 87.04 all 94.24
+meta listwise C=0.03 hard 86.48 all 93.98
+meta listwise C=0.1 hard 85.92 all 93.73
+meta listwise C=0.3 hard 83.94 all 92.86
+meta point C=0.003 hard 77.75 all 90.10
+meta point C=0.01 hard 78.03 all 90.23
+meta point C=0.03 hard 78.03 all 90.23
+meta point C=0.1 hard 78.03 all 90.23

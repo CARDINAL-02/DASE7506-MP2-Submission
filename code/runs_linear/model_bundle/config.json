@@ -1,0 +1,6 @@
+{
+  "kind": "linear_v2",
+  "features": "v2emb",
+  "lambda": 0.01,
+  "hard_subset_definition": ">=2 distinct non-None parsed answers"
+}

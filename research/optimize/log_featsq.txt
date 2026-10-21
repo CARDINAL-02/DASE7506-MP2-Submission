@@ -1,0 +1,25 @@
+svd explained 0.23776816740116896
+  logit 0.003 nit 104 loss 0.1368 16.6s
+all D 1217 lam 0.003 hard 84.51 all 93.11
+  logit 0.01 nit 58 loss 0.1680 9.6s
+all D 1217 lam 0.01 hard 85.35 all 93.48
+  logit 0.03 nit 37 loss 0.1954 6.1s
+all D 1217 lam 0.03 hard 83.66 all 92.73
+  logit 0.1 nit 24 loss 0.2264 3.5s
+all D 1217 lam 0.1 hard 84.51 all 93.11
+  logit 0.003 nit 102 loss 0.1369 9.6s
+noqsvd D 1089 lam 0.003 hard 84.51 all 93.11
+  logit 0.01 nit 60 loss 0.1681 5.6s
+noqsvd D 1089 lam 0.01 hard 85.35 all 93.48
+  logit 0.03 nit 37 loss 0.1956 3.7s
+noqsvd D 1089 lam 0.03 hard 83.94 all 92.86
+  logit 0.1 nit 24 loss 0.2267 2.5s
+noqsvd D 1089 lam 0.1 hard 84.51 all 93.11
+  logit 0.003 nit 106 loss 0.1676 10.2s
+onlyarith D 1035 lam 0.003 hard 80.85 all 91.48
+  logit 0.01 nit 61 loss 0.2023 7.1s
+onlyarith D 1035 lam 0.01 hard 81.69 all 91.85
+  logit 0.03 nit 38 loss 0.2327 4.3s
+onlyarith D 1035 lam 0.03 hard 81.13 all 91.60
+  logit 0.1 nit 22 loss 0.2660 2.3s
+onlyarith D 1035 lam 0.1 hard 80.00 all 91.10

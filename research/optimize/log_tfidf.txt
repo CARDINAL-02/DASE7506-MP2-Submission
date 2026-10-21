@@ -1,0 +1,26 @@
+fit 3.1s vocab 20000
+features (4755, 4, 3)
+  logit 0.003 nit 63 loss 0.2299 1.0s
+v2tf lam=0.003 hard 79.44 all 90.85
+  logit 0.01 nit 39 loss 0.2388 0.6s
+v2tf lam=0.01 hard 78.87 all 90.60
+  logit 0.03 nit 26 loss 0.2523 0.4s
+v2tf lam=0.03 hard 78.31 all 90.35
+  logit 0.1 nit 18 loss 0.2730 0.3s
+v2tf lam=0.1 hard 78.31 all 90.35
+  logit 0.003 nit 103 loss 0.1380 50.3s
+v2tfemb lam=0.003 hard 85.92 all 93.73
+  logit 0.01 nit 59 loss 0.1694 43.0s
+v2tfemb lam=0.01 hard 85.07 all 93.36
+  logit 0.03 nit 37 loss 0.1971 21.4s
+v2tfemb lam=0.03 hard 83.66 all 92.73
+  logit 0.1 nit 25 loss 0.2284 15.9s
+v2tfemb lam=0.1 hard 84.79 all 93.23
+  logit 0.003 nit 101 loss 0.1383 46.1s
+v2emb lam=0.003 hard 85.07 all 93.36
+  logit 0.01 nit 58 loss 0.1697 30.3s
+v2emb lam=0.01 hard 85.92 all 93.73
+  logit 0.03 nit 36 loss 0.1973 19.4s
+v2emb lam=0.03 hard 83.38 all 92.61
+  logit 0.1 nit 24 loss 0.2285 14.3s
+v2emb lam=0.1 hard 84.51 all 93.11

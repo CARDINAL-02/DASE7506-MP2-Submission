@@ -1,0 +1,50 @@
+=== v2emb D 1078
+LR C=0.003 all 91.60 hard 81.13 (288)
+LR C=0.01 all 91.98 hard 81.97 (291)
+LR C=0.03 all 91.98 hard 81.97 (291)
+LR C=0.1 all 91.85 hard 81.69 (290)
+PAIR C=0.001 all 91.98 hard 81.97 (291)
+PAIR C=0.003 all 92.61 hard 83.38 (296)
+PAIR C=0.01 all 92.73 hard 83.66 (297)
+  logit 0.001 nit 167 loss 0.1083 6.1s
+LOGIT lam=0.001 all 92.48 hard 83.10 (295)
+  logit 0.01 nit 58 loss 0.1697 1.9s
+LOGIT lam=0.01 all 93.73 hard 85.92 (305)
+  logit 0.03 nit 36 loss 0.1973 1.2s
+LOGIT lam=0.03 all 92.61 hard 83.38 (296)
+  logit 0.1 nit 24 loss 0.2285 0.8s
+LOGIT lam=0.1 all 93.11 hard 84.51 (300)
+  logit 0.2 nit 18 loss 0.2480 0.7s
+LOGIT lam=0.2 all 93.23 hard 84.79 (301)
+  logit 0.3 nit 16 loss 0.2599 0.6s
+LOGIT lam=0.3 all 92.48 hard 83.10 (295)
+  logit 0.5 nit 13 loss 0.2756 0.5s
+LOGIT lam=0.5 all 91.60 hard 81.13 (288)
+  logit 1.0 nit 11 loss 0.2972 0.4s
+LOGIT lam=1 all 91.23 hard 80.28 (285)
+BEST ('logit', 0.01, np.float64(93.734335839599), np.float64(85.91549295774648))
+=== v2embrel D 2102
+LR C=0.003 all 91.98 hard 81.97 (291)
+LR C=0.01 all 92.61 hard 83.38 (296)
+LR C=0.03 all 92.23 hard 82.54 (293)
+LR C=0.1 all 91.98 hard 81.97 (291)
+PAIR C=0.001 all 92.48 hard 83.10 (295)
+PAIR C=0.003 all 92.73 hard 83.66 (297)
+PAIR C=0.01 all 92.73 hard 83.66 (297)
+  logit 0.001 nit 200 loss 0.0443 13.3s
+LOGIT lam=0.001 all 90.73 hard 79.15 (281)
+  logit 0.01 nit 200 loss 0.1039 14.1s
+LOGIT lam=0.01 all 92.36 hard 82.82 (294)
+  logit 0.03 nit 111 loss 0.1369 8.5s
+LOGIT lam=0.03 all 92.61 hard 83.38 (296)
+  logit 0.1 nit 75 loss 0.1735 5.5s
+LOGIT lam=0.1 all 93.11 hard 84.51 (300)
+  logit 0.2 nit 50 loss 0.1946 3.5s
+LOGIT lam=0.2 all 93.11 hard 84.51 (300)
+  logit 0.3 nit 40 loss 0.2070 3.2s
+LOGIT lam=0.3 all 92.61 hard 83.38 (296)
+  logit 0.5 nit 32 loss 0.2228 3.2s
+LOGIT lam=0.5 all 92.48 hard 83.10 (295)
+  logit 1.0 nit 24 loss 0.2445 2.8s
+LOGIT lam=1 all 92.36 hard 82.82 (294)
+BEST ('logit', 0.1, np.float64(93.10776942355889), np.float64(84.50704225352112))
